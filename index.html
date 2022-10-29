@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5</title>
+  </head>
+  <body>
+    <!-- Non Accessible elements -->
+    <div style="font-size: 30px">Non Accessible Form</div>
+    <div
+      role="button"
+      style="border: 2px solid black; cursor: pointer; background-color: gray"
+      class="customButton"
+      onclick="alert('alerted')"
+    >
+      Submit me
+    </div>
+    <img
+      src="https://miro.medium.com/max/1020/1*z_Zz0wwvw72u-4ECpY0mlw.jpeg"
+      alt="accessibility a11y"
+      width="500px"
+    />
+    <!-- Accessible elements -->
+
+    <h2>Html Accessible Form</h2>
+    <form action="/">
+      <label for="firstName">First name:</label><br />
+      <input type="text" id="firstName" value="john" /><br />
+      <label for="lastname">Last name:</label><br />
+      <input type="text" id="lastName" value="doe" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>Webpage should be Accessible to everyone</p>
+  </body>
+</html>
